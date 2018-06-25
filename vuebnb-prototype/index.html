@@ -24,7 +24,12 @@
 
 	</div>
   <div class="container">
-  	<div id="modal" v-bind:class="{show:modalOpen}"></div>
+  	<div id="modal" v-bind:class="{show:modalOpen}">    <!-- MODAL -->
+  		<button class="modal-close" v-on:click="modalOpen = false">&times;</button>
+  		<div class="modal-content">
+  			<img src="sample/header.jpg"/>
+  		</div>
+  	</div>
 	<div class="heading">
 		<h1>{{title}}</h1>
 		<p>{{ address }}</p>
